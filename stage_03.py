@@ -5,7 +5,7 @@ with open("artifacts01.txt", "r") as f:
 
 
 with open("artifacts02.txt", "w") as f:
-    text = f.write(text + "added lines")
+    text = f.write(text + "\nadded lines")
 
 mlflow.log_metric("last_text", text)
 print("end of stage 03")
